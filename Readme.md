@@ -36,7 +36,7 @@ This project was created by ___ during the Spring 2021 session of Codubee. We bu
 
 1. Clone the repo
 ```sh
-git clone https://github.com/Codubee/SpaceJunkTTH2-4.git
+git clone https://github.com/Codubee/FoodFiendsMW5-6.git
 ```
 2. Change into the front end directory
 ```sh
@@ -55,7 +55,7 @@ npm run start
 
 1. Clone the repo
 ```sh
-git clone https://github.com/Codubee/SpaceJunkTTH2-4.git
+git clone https://github.com/Codubee/FoodFiendsMW5-6.git
 ```
 2. Change into the back end directory
 ```sh
