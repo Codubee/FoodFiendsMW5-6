@@ -5,13 +5,14 @@
 [![MIT License][license-shield]][license-url]
 
 <br />
-<p align="center">
+<div align="center">
 
-  <h3 align="center"></h3>
+  <h3 align="center">Food Fiends</h3>
 
   <p align="center">
+  This project helps answer the questions of what are we eating tonight.
   </p>
-</p>
+</div>
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
