@@ -20,16 +20,11 @@ const Feature = props=> {
     );
 }
 
-const showTitle = () => {
-    <h1>How It Works</h1>
-}
-
 class Features extends React.Component {
     render() {
         return (
             <div>
                 <div className="container-fluid">
-                    
                     <div className="row">
                         <div className="col-md-4">
                             <Feature imgsrc={img1} title="Searching" desc="Figuring out what to eat by selecting food categories"/>
