@@ -16,7 +16,7 @@ const Example = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar style={{backgroundColor: '#C0E7F6'}}light expand="md">
         <NavbarBrand href="/">Food Fiends</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -25,7 +25,13 @@ const Example = (props) => {
               <NavLink href="#">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Contact Us</NavLink>
+              <NavLink href="#">Team</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">Features</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">Tools</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
