@@ -2,9 +2,9 @@ import React from 'react'
 import img1 from './images/review.svg'
 import img2 from './images/list.svg'
 import img3 from './images/eating.svg'
-import './features-style.css'
+import '../styles/features.css'
 
-const Feature = props=> {
+function Feature(props) {
     return(
         <div className="card text-center">
             <div className="overflow">
@@ -20,27 +20,24 @@ const Feature = props=> {
     );
 }
 
-class Features extends React.Component {
-    render() {
-        return (
-            <div>
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-md-4">
-                            <Feature imgsrc={img1} title="Searching" desc="Figuring out what to eat by selecting food categories"/>
-                        </div>
-                        <div className="col-md-4">
-                            <Feature imgsrc={img2} title="Matching" desc="Finding a match between people's food choices"/>
-                        </div>
-                        <div className="col-md-4">
-                            <Feature imgsrc={img3} title="Choosing" desc="Making the hard choice when no one wants to eat the same thing"/>
-                        </div>
+function Features() {
+    return (
+        <div>
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-md-4">
+                        <Feature imgsrc={img1} title="Searching" desc="Figuring out what to eat by selecting food categories"/>
+                    </div>
+                    <div className="col-md-4">
+                        <Feature imgsrc={img2} title="Matching" desc="Finding a match between people's food choices"/>
+                    </div>
+                    <div className="col-md-4">
+                        <Feature imgsrc={img3} title="Choosing" desc="Making the hard choice when no one wants to eat the same thing"/>
                     </div>
                 </div>
             </div>
-        )
-
-    }
+        </div>
+    ) 
 }
 
 export default Features;
