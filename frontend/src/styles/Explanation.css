@@ -6,7 +6,7 @@
 }
 
 .jumbo {
-    /* The style for the jumbotron. The link does not go to the proper location, and causes the compile error */
-    background-Image: url("/images/explanation_background.PNG");
+    /* The style for the jumbotron located in the Explanation.js component.  */
+    background-Image: url("../images/explanation_background.PNG") !important;
     background-Size: cover;
 }
