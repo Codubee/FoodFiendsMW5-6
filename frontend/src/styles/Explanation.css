@@ -1,0 +1,16 @@
+
+
+.my-2 {
+    Color: rgb(255, 255, 255);
+    width: 0%;
+}
+
+.jumbo {
+    /* The style for the jumbotron located in the Explanation.js component.  */
+    background-Image: url("../images/explanation_background.PNG") !important;
+    background-Size: cover;
+}
+
+.all-around-margin{
+    margin: 60px;
+}
