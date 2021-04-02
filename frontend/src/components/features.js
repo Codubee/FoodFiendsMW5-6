@@ -1,8 +1,8 @@
 import React from 'react'
-import img1 from './images/review.svg'
-import img2 from './images/list.svg'
-import img3 from './images/eating.svg'
-import '../styles/features.css'
+import img1 from '../images/review.svg'
+import img2 from '../images/list.svg'
+import img3 from '../images/eating.svg'
+import '../styles/Features.css'
 
 function Feature(props) {
     return(
