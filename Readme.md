@@ -25,7 +25,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project was created by ___ during the Spring 2021 session of Codubee. We built this application as a solution to those who cannot figure out what to eat.
+This project was created by [Alexander](https://github.com/AlexanderdeBont), [Arath](https://github.com/axp7186), [Arielle](https://github.com/posadari), [Hana](https://github.com/HanaEason), and [Lena](https://github.com/LenaMubarak) during the Spring 2021 session of Codubee. We built this application as a solution to those who cannot figure out what to eat.
 
 
 <!-- GETTING STARTED -->
