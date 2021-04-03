@@ -1,0 +1,15 @@
+.room-id-div{
+    margin-top: 5em;
+}
+
+
+.new-room-row{
+    margin-top: 8em;
+}
+
+.main-header{
+    background-color: #C0E7F6;
+    min-height: 14em;
+    display: grid;
+    place-items: center;
+}
