@@ -1,22 +1,14 @@
-//Creates the team component 
-
-//import react
 import React from 'react'
-
-//import images
 import lena from '../images/lena.jpg'
 import alex from '../images/alex.png'
 import arielle from '../images/arielle.jpg'
 import hannah from '../images/hannah.jpg'
 import arath from '../images/arath.jpg'
 
-
-//import a card component
 import{
     Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, CardDeck
 } from 'reactstrap'
 
-//components
 function team() {
     return(
         <div>
@@ -70,5 +62,4 @@ function team() {
     )
 }
 
-//export component to use in app
 export default team;
