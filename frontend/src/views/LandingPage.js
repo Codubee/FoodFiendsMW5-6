@@ -1,14 +1,12 @@
 import React from 'react';
-import Team from "../components/Team";
+import Explanation from '../components/Explanation'
+import Features from '../components/Features'
 
 function LandingPage(){
     return(
         <div>
-            {/* Insert your created components here */
-                //team component
-                <Team/> 
-            }
-            <h1>Landing Page Component</h1> 
+            <Explanation />
+            <Features/>
         </div>
     )
 }

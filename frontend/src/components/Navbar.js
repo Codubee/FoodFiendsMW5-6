@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   Collapse,
-  Navbar,
+  Navbar as RSNav,
   NavbarToggler,
   NavbarBrand,
   Nav,
@@ -9,29 +9,29 @@ import {
   NavLink
 } from 'reactstrap';
 
-const Example = (props) => {
+function Navbar () {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <RSNav color="light" light expand="md">
         <NavbarBrand href="/">Food Fiends</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="#">Home</NavLink>
+              <NavLink href="/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Contact Us</NavLink>
+              <NavLink href="/match">Match</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
-      </Navbar>
+      </RSNav>
     </div>
   );
 }
 
-export default Example;
+export default Navbar;
