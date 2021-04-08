@@ -7,8 +7,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      {/* <LandingPage /> */}
-      <Room/>
+      <LandingPage />
     </div>
   );
 }
