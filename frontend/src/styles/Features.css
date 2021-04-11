@@ -1,11 +1,11 @@
-.card{
+.features-card{
     width:20rem;
     margin-top: 50%;
     margin-bottom: 50%;
 
 }
 
-.card:hover{
+.features-card:hover{
     box-shadow:5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
 
 }
@@ -14,7 +14,7 @@
     max-height: 200px;
 }
 
-.card-body {
+.features-card-body {
     margin-bottom: 5px;
 }
 

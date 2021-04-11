@@ -1,4 +1,5 @@
 import React from 'react';
+import Team from "../components/Team"
 import Explanation from '../components/Explanation'
 import Features from '../components/Features'
 
@@ -7,6 +8,7 @@ function LandingPage(){
         <div>
             <Explanation />
             <Features/>
+            <Team/>
         </div>
     )
 }
