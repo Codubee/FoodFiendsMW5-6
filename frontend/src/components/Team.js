@@ -8,7 +8,7 @@ import '../styles/Team.css';
 
 
 import{
-    Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, CardDeck,Row,Col
+    Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, CardDeck
 } from 'reactstrap'
 
 function team() {
