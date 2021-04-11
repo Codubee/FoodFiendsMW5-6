@@ -1,0 +1,28 @@
+.card{
+    width:20rem;
+    margin-top: 50%;
+    margin-bottom: 50%;
+
+}
+
+.card:hover{
+    box-shadow:5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+
+}
+
+.card-img-top {
+    max-height: 200px;
+}
+
+.card-body {
+    margin-bottom: 5px;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #007600, #00150c);
+    text-align: center;
+    font-family: monospace;
+}
