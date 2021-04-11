@@ -1,9 +1,11 @@
-.deck{
+.team-card-deck{
     background-color:#C0E7F6;
     background-size: cover;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
 }
 
-.card{
+.team-card{
     color:#FF4500;
     max-width:"350px";
     max-height:"250px";

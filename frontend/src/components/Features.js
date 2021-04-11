@@ -6,11 +6,11 @@ import '../styles/Features.css'
 
 function Feature(props) {
     return(
-        <div className="card text-center">
+        <div className="features-card text-center">
             <div className="overflow">
                 <img src={props.imgsrc} alt="process" className="card-img-top"></img>
             </div>
-            <div className="card-body text-dark">
+            <div className="features-card-body text-dark">
                 <h4 className="card-title">{props.title}</h4>
                 <p className="card-text text-secondary">
                 {props.desc}

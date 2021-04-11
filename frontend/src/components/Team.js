@@ -8,14 +8,16 @@ import '../styles/Team.css';
 
 
 import{
-    Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, CardDeck
+    Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, CardDeck,Row,Col
 } from 'reactstrap'
 
 function team() {
     return(
         <div>
-            <CardDeck className="deck">
-                <Card className="card" >
+            <CardDeck className="team-card-deck">
+
+
+                <Card className= "team-card" >
                     <CardImg id="img" top width="100%" src={lena} alt="lena"/>
                     <CardBody id="text">
                         <CardTitle id="title">Lena Mubarak</CardTitle>
@@ -24,7 +26,8 @@ function team() {
                     </CardBody>
                 </Card>
 
-                <Card className="card" >
+
+                <Card className= "team-card" >
                     <CardImg id="img" top width="100%" src={alex} alt="alex"/>
                     <CardBody id="text">
                         <CardTitle id="title">Alexander de Bont </CardTitle>
@@ -33,7 +36,8 @@ function team() {
                     </CardBody>
                 </Card>
 
-                <Card className="card" >
+
+                <Card className= "team-card" >
                     <CardImg id="img" top width="100%" src={arielle} alt="arielle"/>
                     <CardBody id="text">
                         <CardTitle id="title">Arielle Posadas</CardTitle>
@@ -42,7 +46,8 @@ function team() {
                     </CardBody>
                 </Card>
 
-                <Card className="card" >
+
+                <Card className= "team-card" >
                     <CardImg id="img" top width="100%" src={hannah} alt="hannah"/>
                     <CardBody id="text">
                         <CardTitle id="title">Hannah Eason</CardTitle>
@@ -50,8 +55,7 @@ function team() {
                         <CardText>The University of Texas at Dallas <p>Undergraduate</p> </CardText>
                     </CardBody>
                 </Card>
-
-                <Card className="card" >
+                <Card className= "team-card" >
                     <CardImg id="img" top width="100%" src={arath} alt="arath"/>
                     <CardBody id="text">
                         <CardTitle id="title">Arath Paneet</CardTitle>
