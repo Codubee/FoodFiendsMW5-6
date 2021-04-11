@@ -25,7 +25,7 @@ function Navbar () {
               <NavLink href="/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/match">Match</NavLink>
+              <NavLink href="/room">Match</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Container, FormGroup, Form, Label, Input, Row, Col } from 'reactstrap'
+import { Button, Container, FormGroup, Form, Label, Input, Row, Col,NavLink } from 'reactstrap'
 import '../styles/Room.css'
 
 class Room extends React.Component {
@@ -59,16 +59,18 @@ class Room extends React.Component {
                             </div>
                         </FormGroup>
                     </Form >
-                    <Form onSubmit={this.createNewRoom}>
-                        <Row className="new-room-row">
-                            <Col sm="12" md="6">
-                                <h3>Create a new room</h3>
-                            </Col>
-                            <Col sm="12" md="6">
-                                <Button>Create Room</Button>
-                            </Col>
-                        </Row>
-                    </Form>
+
+                    <Row className="new-room-row">
+                        <Col sm="12" md="6">
+                            <h3>Create a new room</h3>
+                        </Col>
+                        <Col sm="12" md="6">
+                            <Button>
+                                <NavLink href="/match"> Create Room </NavLink>
+                            </Button>
+                        </Col>
+                    </Row>
+
                 </Container>
             </div>
 
