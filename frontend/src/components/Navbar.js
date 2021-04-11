@@ -8,6 +8,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
+import '../styles/Navbar.css';
 
 const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,8 +16,8 @@ const Example = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <Navbar style={{backgroundColor: '#C0E7F6'}}light expand="md">
+    <div className="color">
+      <Navbar light expand="md">
         <NavbarBrand href="/">Food Fiends</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
