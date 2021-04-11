@@ -7,6 +7,14 @@
     margin-top: 8em;
 }
 
+.new-room-row a{
+    color:white
+}
+
+.new-room-row a:hover{
+    color:white
+}
+
 .main-header{
     background-color: #C0E7F6;
     min-height: 14em;

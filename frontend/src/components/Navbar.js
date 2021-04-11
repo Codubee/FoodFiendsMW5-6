@@ -26,13 +26,7 @@ function Navbar () {
               <NavLink href="/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Team</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#">Features</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#">Tools</NavLink>
+              <NavLink href="/room">Match</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
