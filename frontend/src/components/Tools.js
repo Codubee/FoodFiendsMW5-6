@@ -14,23 +14,25 @@ function Tools() {
         <div>
             <div className="container-fluid">
                 <div className="row">
+                    <div classname="img">
                     <div className="col-1">
-                        <Tools imgsrc={img1} title="SReact"/>
+                        <img src={img1} title="SReact" desc="SReact"/>
                     </div>
-                    <div className="col-2">
-                        <Tools imgsrc={img2} title="NodeJS"/>
+                    <div className="col-1">
+                        <img src={img2} title="NodeJS" desc="NodeJS"/>
                     </div>
-                    <div className="col-3">
-                        <Tools imgsrc={img3} title="Jira"/>
+                    <div className="col-1">
+                        <img src={img3} title="Jira" desc="Jira"/>
                     </div>
-                    <div className="col-4">
-                        <Tools imgsrc={img4} title="Postman"/>
+                    <div className="col-1">
+                        <img src={img4} title="Postman" desc="Postman"/>
                     </div>
-                    <div className="col-5">
-                        <Tools imgsrc={img5} title="AWS"/>
+                    <div className="col-1">
+                        <img src={img5} title="AWS" desc="AWS"/>
                     </div>
-                    <div className="col-6">
-                        <Tools imgsrc={img6} title="Heroku"/>
+                    <div className="col-1">
+                        <img src={img6} title="Heroku" desc="Heroku"/>
+                    </div>
                     </div>
                 </div>
             </div>
