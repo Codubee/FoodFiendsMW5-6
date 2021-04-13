@@ -8,6 +8,7 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
+import '../styles/Navbar.css';
 
 function Navbar () {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,8 +16,8 @@ function Navbar () {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <RSNav color="light" light expand="md">
+    <div className="color">
+      <RSNav light expand="md">
         <NavbarBrand href="/">Food Fiends</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -25,7 +26,7 @@ function Navbar () {
               <NavLink href="/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/match">Match</NavLink>
+              <NavLink href="/room">Match</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
