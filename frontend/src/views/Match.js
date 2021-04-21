@@ -1,8 +1,9 @@
 import React from 'react'
+import RoomId from '../components/RoomId'
 
 function Match(){
     return(
-        <h1>Match Page</h1>
+        <RoomId/>
     )
 }
 
