@@ -18,7 +18,6 @@ function Navbar () {
   return (
     <div className="color">
       <Navbar light expand="md">
-
         <NavbarBrand href="/">Food Fiends</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -37,7 +36,7 @@ function Navbar () {
             </NavItem>
           </Nav>
         </Collapse>
-      </RSNav>
+      </Navbar>
     </div>
   );
 }
