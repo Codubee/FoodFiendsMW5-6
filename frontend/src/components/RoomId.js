@@ -32,7 +32,7 @@ class RoomId extends React.Component {
             <div className="search-bar input-group">
                 <input type="text" className="form-control" placeholder="Enter a room id" onChange={ this.updateState }></input>
                 <div>
-                    <button className="btn btn-outline-primary" type="button" onClick={this.search}>Search</button>
+                    <button className="btn btn-outline-primary" type="button" onClick={this.search}>Enter</button>
                 </div>
             </div>
         )

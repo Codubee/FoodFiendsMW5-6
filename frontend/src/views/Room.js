@@ -1,6 +1,7 @@
 import React from 'react'
-import { Button, Container, FormGroup, Form, Label, Input, Row, Col,NavLink } from 'reactstrap'
+import { Button, Container,Row, Col,NavLink } from 'reactstrap'
 import '../styles/Room.css'
+import RoomId from '../components/RoomId'
 
 class Room extends React.Component {
     constructor(props) {
@@ -37,28 +38,8 @@ class Room extends React.Component {
                 </Container>
 
                 <Container>
-                    <Form onSubmit={this.enterRoom}>
-                        <FormGroup>
-                            <div className="room-id-div">
-                                <Row>
-                                    <Col md="2" sm="12">
-                                        <Label for="exampleEmail">Room ID</Label>
-                                    </Col>
-                                    <Col md="8" sm="12">
-                                        <Input
-                                            type="text"
-                                            placeholder="Enter room id"
-                                            value={this.state.roomId}
-                                            onChange={this.handleChange}
-                                        />
-                                    </Col>
-                                    <Col md="2" sm="12">
-                                        <Button>Enter</Button>
-                                    </Col>
-                                </Row>
-                            </div>
-                        </FormGroup>
-                    </Form >
+                    <RoomId/>
+
 
                     <Row className="new-room-row">
                         <Col sm="12" md="6">
