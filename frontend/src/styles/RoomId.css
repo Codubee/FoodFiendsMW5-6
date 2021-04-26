@@ -1,0 +1,9 @@
+.search-bar {
+    max-width: 50%;
+    display: flex;
+    position: relative;
+    left: 35% !important;
+    transform: translate(-30%);
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
