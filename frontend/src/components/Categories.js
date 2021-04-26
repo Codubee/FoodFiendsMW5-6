@@ -3,7 +3,7 @@ import '../styles/Categories.css';
 
 function Categories(props) {
   return (
-    <div class="custom-select" style="width:200px;">
+    <div>
        <label for="categories">Choose a food category:</label>
          <select name="categories" id="categories">
             <option  value="italian">Italian</option>
