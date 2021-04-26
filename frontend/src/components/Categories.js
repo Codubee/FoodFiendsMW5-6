@@ -4,7 +4,7 @@ import '../styles/Categories.css';
 function Categories(props) {
   return (
     <div>
-       <label for="categories">Choose a food category:</label>
+       <label for="categories">Choose a food category: </label>
          <select name="categories" id="categories">
             <option  value="italian">Italian</option>
             <option  value="mexican">Mexican</option>
