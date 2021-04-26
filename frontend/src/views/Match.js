@@ -1,8 +1,11 @@
 import React from 'react'
+import Categories from '../components/Categories'
 
 function Match(){
     return(
-        <h1>Match Page</h1>
+        <div>
+            <Categories/>
+        </div>
     )
 }
 
