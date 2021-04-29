@@ -1,11 +1,14 @@
 import React from 'react'
 import Categories from '../components/Categories'
+import {Button, Container} from 'reactstrap'
+import '../styles/Match.css'
 
 function Match(){
     return(
-        <div>
+        <Container className="text-center pt-lg">
             <Categories/>
-        </div>
+            <Button outline color="success" size='lg' >Submit</Button>
+        </Container>
     )
 }
 
