@@ -5,9 +5,9 @@ import '../styles/Match.css'
 
 function Match(){
     return(
-        <Container className="text-center pt-lg">
+        <Container className="text-center mt-lg">
             <Categories/>
-            <Button outline color="success" size='lg' >Submit</Button>
+            <Button className="mt-sm" outline color="success" size='lg' >Submit</Button>
         </Container>
     )
 }
