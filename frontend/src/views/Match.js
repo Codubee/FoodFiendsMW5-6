@@ -14,7 +14,8 @@ function Match() {
                     <option value="chinese">Chinese</option>
                 </select>
             </div>
-            <Button className="mt-sm" outline color="success" size='lg' >Submit</Button>
+            <Button className="mt-sm" outline color="success" >Submit</Button>
+            <Button className="mt-sm ml-sm" outline>Refresh</Button>
         </Container>
     )
 }
