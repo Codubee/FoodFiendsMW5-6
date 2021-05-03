@@ -3,28 +3,29 @@ const app = express()
 const axios = require('axios');
 app.use(express.json());
 
+//The following backend route adds a specific cuisine to a certain room based on its id
+app.post('/addChoice', function(req, res) {
+    //Prints out the request's body to the console for debugging
+    console.log(req.body);
 
-/*
-    I will leave this here as an example that you can use
-    when building your APIs. I suggest that you try to understand
-    what each line is doing. Reach out if you have any questions.
-*/
-app.get('/exampleApi', function (req, res) {
+    //The following makes a temporary javascript object to be sent with the axios post request to the server
+    const body = {
+        id: req.body.id,
+        choice: req.body.choice
+    }
 
-    axios.get('https://api.agify.io?name=Mike')
+    //Make the actual post request to the server at the following URL
+    axios.post('https://codubee-projects-api.herokuapp.com/food/addChoice', body)
     .then(function (response) {
-        // handle success and send back a 200 response with the data
+        //If POST successful, print out the response from the server and return a 200 status code to the caller
         console.log(response.data);
         res.status(200).json(response.data);
     })
     .catch(function (error) {
-        /* 
-            It is good practice to handle the error and send back the 
-            error message that was received from the API call
-        */ 
+        //If POST request failed, print out the error message and return a 400 status code to the caller
         console.log(error)
         res.status(400).json({error:"An error occurred"});
     })
 })
 
-app.listen(8080, () => console.log('Listening at locahost:8080'))
+app.listen(8080, () => console.log('Listening at localhost:8080'))
