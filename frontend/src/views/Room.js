@@ -40,7 +40,6 @@ class Room extends React.Component {
                 <Container>
                     <RoomId/>
 
-
                     <Row className="new-room-row">
                         <Col sm="12" md="6">
                             <h3>Create a new room</h3>

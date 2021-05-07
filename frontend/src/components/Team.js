@@ -22,7 +22,7 @@ function team() {
                     <CardBody id="text">
                         <CardTitle id="title">Lena Mubarak</CardTitle>
                         <CardSubtitle >Software Engineering</CardSubtitle> 
-                        <CardText>The University of Texas at Dallas <p>Junior</p> </CardText>
+                        <CardText>The University of Texas at Dallas <span>Junior</span> </CardText>
                     </CardBody>
                 </Card>
 
@@ -32,7 +32,7 @@ function team() {
                     <CardBody id="text">
                         <CardTitle id="title">Alexander de Bont </CardTitle>
                         <CardSubtitle >Computer Science</CardSubtitle> 
-                        <CardText>The University of Texas at Dallas <p>Undergraduate</p> </CardText>
+                        <CardText>The University of Texas at Dallas <span>Undergraduate</span> </CardText>
                     </CardBody>
                 </Card>
 
@@ -42,7 +42,7 @@ function team() {
                     <CardBody id="text">
                         <CardTitle id="title">Arielle Posadas</CardTitle>
                         <CardSubtitle >Computer Science</CardSubtitle> 
-                        <CardText>The University of Texas at Dallas <p>Sophomore</p> </CardText>
+                        <CardText>The University of Texas at Dallas <span>Sophomore</span> </CardText>
                     </CardBody>
                 </Card>
 
@@ -52,7 +52,7 @@ function team() {
                     <CardBody id="text">
                         <CardTitle id="title">Hannah Eason</CardTitle>
                         <CardSubtitle >Computer Science</CardSubtitle> 
-                        <CardText>The University of Texas at Dallas <p>Undergraduate</p> </CardText>
+                        <CardText>The University of Texas at Dallas <span>Undergraduate</span> </CardText>
                     </CardBody>
                 </Card>
                 <Card className= "team-card" >
@@ -60,7 +60,7 @@ function team() {
                     <CardBody id="text">
                         <CardTitle id="title">Arath Paneet</CardTitle>
                         <CardSubtitle >Mechanical Engineering</CardSubtitle> 
-                        <CardText>The University of Texas at Dallas <p>Alumnus</p> </CardText>
+                        <CardText>The University of Texas at Dallas <span>Alumnus</span> </CardText>
                     </CardBody>
                 </Card>
             </CardDeck>
