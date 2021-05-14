@@ -1,7 +1,9 @@
 const express = require('express')
 const app = express()
 const axios = require('axios');
+var cors = require('cors')
 app.use(express.json());
+app.use(cors())
 
 //The following backend route adds a specific cuisine to a certain room based on its id
 app.post('/addChoice', function(req, res) {
@@ -46,4 +48,4 @@ app.get('/createRoom', function(req, res) {
     })
 })
 
-app.listen(8080, () => console.log('Listening at localhost:8080'))
+app.listen(process.env.PORT || 8080, () => console.log('Listening at localhost:8080'))
