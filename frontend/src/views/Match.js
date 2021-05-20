@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 import { Button, Container } from 'reactstrap'
 import '../styles/Match.css'
 
@@ -6,10 +7,20 @@ class Match extends React.Component {
 
     constructor(props){
         super(props)
-        this.state = {id:this.createRoomId,category:''}
+        this.state = {id:this.createRoomId(),category:''}
         this.handleCategoryChange = this.handleCategoryChange.bind(this)
     }
+
+    callCreateRoomAPI() {
+        axios.get('/createRoom?id=' + this.state.id)
+            .then((response) => {
+                console.log(response.data);
+            })
+    }
     
+    componentDidMount() {
+        this.callCreateRoomAPI();
+    }
 
     handleCategoryChange(event){
         this.setState({category:event.target.value})
