@@ -1,5 +1,4 @@
 import React from 'react'
-import axios from 'axios'
 import { Button, Container } from 'reactstrap'
 import '../styles/Match.css'
 const axios = require('axios');
@@ -20,7 +19,6 @@ class Match extends React.Component {
     callCreateRoomAPI() {
         axios.get('/createRoom?id=' + this.createRoomId())
             .then((response) => {
-                console.log(response.data);
                 this.setState({id:response.data.id})
             })
     }
@@ -44,7 +42,7 @@ class Match extends React.Component {
             <Container className="text-center mt-lg">
                 <div>
                     <label>Choose a food category: </label>
-                    <select name="categories" id="categories" onChange={this.handleCategoryChange} onBeforeInput>
+                    <select name="categories" id="categories" onChange={this.handleCategoryChange}>
                         <option value="italian">Italian</option>
                         <option value="mexican">Mexican</option>
                         <option value="indian">Indian</option>
