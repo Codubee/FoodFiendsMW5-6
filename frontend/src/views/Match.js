@@ -7,19 +7,20 @@ class Match extends React.Component {
 
     constructor(props){
         super(props)
-        this.state = {id:this.createRoomId(),category:''}
+        this.state = {id:0,category:''}
         this.handleCategoryChange = this.handleCategoryChange.bind(this)
-    }
-
-    callCreateRoomAPI() {
-        axios.get('/createRoom?id=' + this.state.id)
-            .then((response) => {
-                console.log(response.data);
-            })
     }
     
     componentDidMount() {
         this.callCreateRoomAPI();
+    }
+
+    callCreateRoomAPI() {
+        axios.get('/createRoom?id=' + this.createRoomId())
+            .then((response) => {
+                console.log(response.data);
+                this.setState({id:response.data.id})
+            })
     }
 
     handleCategoryChange(event){
@@ -27,7 +28,7 @@ class Match extends React.Component {
     }
 
     createRoomId(){
-        return Math.random();
+        return Math.floor(Math.random() * 1000) + 1;
     }
     render() {
         return (
