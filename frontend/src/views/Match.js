@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 import { Button, Container } from 'reactstrap'
 import '../styles/Match.css'
 const axios = require('axios');
@@ -7,12 +8,22 @@ class Match extends React.Component {
 
     constructor(props){
         super(props)
-        //Ititializes category to italian, otherwise if the user pushes the button without changing the category choice the choice sent is null.
-        this.state = {id:this.createRoomId(),category:'italian'}
+        this.state = {id:0,category:'italian'}
         this.handleCategoryChange = this.handleCategoryChange.bind(this)
         this.callAddChoice = this.callAddChoice.bind(this)
     }
     
+    componentDidMount() {
+        this.callCreateRoomAPI();
+    }
+
+    callCreateRoomAPI() {
+        axios.get('/createRoom?id=' + this.createRoomId())
+            .then((response) => {
+                console.log(response.data);
+                this.setState({id:response.data.id})
+            })
+    }
 
     handleCategoryChange(event){
         this.setState({category:event.target.value})
@@ -20,7 +31,7 @@ class Match extends React.Component {
 
     //Dont want room id for this instance to be random. Change
     createRoomId(){
-        return Math.random();
+        return Math.floor(Math.random() * 1000) + 1;
     }
 
     //This calls the backend with the current state of the match instance (Including the room id and the choice of food type)
